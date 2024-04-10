@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: ali-jwt-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ali123
+      MYSQL_DATABASE: alijwt-db
+      MYSQL_USER: alijwtdb
+      MYSQL_PASSWORD: ali123
+    ports:
+      - '3306:3306'
+
